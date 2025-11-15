@@ -1,23 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Rounsley Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <h1>Woah, a Website!!!</h1>
-    <div>
-        <button>Click me</button>
-        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer" >Link to the best place ever</a>
-        <a href="./pages/about.html"> To the about page</a>
-        <img src="./images/cat-funny.gif" alt="Cat GIF">
-        <form>
-            <label for="search">Search</label>
-            <input type="text" name="search" id="search" >
-            <button type="submit">Search</button>
-        </form>
+    <!-- NavBar -->
+    <nav>
+        <div class="left">
+            <a href="/">Tom Rounsley</a>
+        </div>
 
-    </div>
+        <div class="right">
+            <a href="https://www.linkedin.com/in/tom-rounsley/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+
+            <a href="mailto:tomsrounsley@hmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <main>
+        <!-- SECTION 1: Hero-->
+         <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Tom 👋</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi consequuntur quasi nesciunt dolor delectus rem ea aliquam ducimus, et sapiente recusandae aut maxime! Obcaecati nisi odio atque et eveniet est ex perferendis repudiandae sequi consequatur, impedit voluptatem sint eaque harum nemo quod ducimus quibusdam ratione maxime! Dolores error nesciunt veniam.</p>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span> Testimony</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="images/cat-funny.gif"   alt="Tom Rounsley headshot">
+            </div>
+         </section>
+
+
+
+        <!-- SECTION 2: Skills-->
+         <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illo sequi doloribus pariatur nihil aliquid fuga maxime similique odit, vitae sapiente at corporis, ex ipsum perferendis esse! Atque, quidem veritatis.
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="./images/python-logo.webp" alt="Python Logo">
+                    <span>Python</span>
+                </div>
+    
+                <div class="cell">
+                    <img src="./images/excel-logo.png" alt="Excel Logo">
+                    <span>Excel</span>
+                </div>
+
+                <div class="cell">
+                    <img src="./images/VBA-logo.svg" alt="VBA Logo">
+                    <span>VBA</span>
+                </div>
+
+                <div class="cell">
+                    <img src="./images/power-bi-logo.jpeg" alt="Power BI Logo">
+                    <span>Power BI</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Testimony-->
+         <section id="testimony">         </section>
+         
+         
+
+        <!-- SECTION 4: Contact-->
+         <section id="contact">         </section>         
+
+    </main>
+
+
+
 </body>
 </html>
