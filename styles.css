@@ -19,6 +19,8 @@ html {
 body {
    font-family: 'Poppins', sans-serif;
    background-color: var(--background-color);
+   max-width: 1400px;
+   margin: 0 auto;
 }
 
 a{
@@ -106,6 +108,8 @@ nav .right a span {
 
 .hero-section .headshot img{
    width: 350px;
+   aspect-ratio: 1/1;
+   object-fit: cover;
    border-radius: 50%;
 }
 
@@ -157,6 +161,109 @@ nav .right a span {
 
 
 
+/* SECTION 3: Testimony */
+
+.testimony-section {
+   padding: 0 50px;
+   margin-bottom: 100px;
+   }
+
+.testimony-section h2 {
+   font-size: 35px;
+   margin-bottom: 30px;
+}
+
+.testimony-section .group {
+   display: flex;
+   align-items: center;
+   gap: 50px;
+}
+
+.testimony-section .group .person-details {
+   text-align: center;
+   flex: 2;
+}
+
+.testimony-section .group .text{
+      flex: 8;
+}
+
+.testimony-section .group .person-details img {
+   width: 200px;
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   border-radius: 50%;
+   margin-bottom: 10px;
+}
+
+.testimony-section .group .person-details p {
+   font-weight: 600;
+}
+
+.testimony-section .group .person-details p:last-child {
+   font-weight: normal;
+}
+
+
+/*SECTION 4: Contact */
+
+.contact-section {
+   padding: 0 50px;
+   margin-bottom: 100px;
+}
+
+.contact-section h2{
+   font-size: 35px;
+}
+
+.contact-section .group {
+   display: flex;
+   gap: 50px;
+}
+
+.contact-section .group .text {
+   flex: 3;
+   margin-top: 20px;
+}
+
+.contact-section .group form {
+   flex: 3;
+   display: flex;
+   flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+   font-family: 'Poppins', sans-serif;
+   border: 2px solid var(--link-color);
+   background-color: transparent;
+   border-radius: 10px;
+   padding: 10px;
+   margin-bottom: 15px;
+   outline: none;
+   resize: none;
+}
+
+.contact-section .group form button {
+   font-size: 16px;
+   font-family: "Poppins", sans-serif;
+   color: #fff;
+   background-color: var(--link-color);
+   border: none;
+   border-radius: 10px;
+   height: 50px;
+   cursor: pointer;
+   transition: .1s;
+}
+
+.contact-section .group form button:hover {
+   filter: brightness(.9);
+}
+
+
+
+
+
 @media (max-width: 850px) {
    /*SECTION 1: hero */
    .hero-section .text h2 {
@@ -172,6 +279,22 @@ nav .right a span {
 
    .hero-section .headshot img {
       width: 300px;
+   }
+
+
+   /*SECTION 3: Testimony */
+   .testimony-section {
+      text-align: center;
+   }
+
+   .testimony-section .group {
+      flex-direction: column;
+   }
+
+
+   /*SECTION 4: Contact */
+   .contact-section .group {
+      flex-direction: column;
    }
 }
 
@@ -211,7 +334,19 @@ nav .right a span {
       padding: 0 20px;
    }
 
-   .skills-section span{
-      fon-size: 16px;
+   .skills-section .cells .cell span{
+      font-size: 16px;
+   }
+
+
+   /*SECTION 3: Testimony*/
+
+   .testimony-section {
+      padding: 0 20px;
+   }
+
+   /*SECTION 4: Contact */
+   .contact-section {
+      padding: 0 20px;
    }
 }
