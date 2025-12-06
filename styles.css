@@ -19,7 +19,7 @@ html {
 body {
    font-family: 'Poppins', sans-serif;
    background-color: var(--background-color);
-   max-width: 1400px;
+   /*max-width: 1400px;*/
    margin: 0 auto;
 }
 
@@ -49,18 +49,78 @@ nav .right a{
    margin: 0 10px;
    }
 
-nav .right a:last-child {
+   
+nav .right a:nth-child(1) {
    color: var(--background-color);
    background-color: var(--text-color);
    padding: 5px 15px;
    border-radius: 5px;
-}
+} 
 
 nav .right a span {
    margin-left: 5px;
 }
 
 
+/* The dropdown*/
+nav .right .dropdown {
+  float: right;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+nav .right .dropdown .dropbtn { /* Dropdown button */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: var(--text-color);
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn { /* Add a red background color to navbar links on hover */
+  background-color: var(--link-color);
+}
+
+nav .right .dropdown-content { /* Dropdown content (hidden by default) */
+  display: none;
+  position: absolute;
+  right: 30px;
+  left: auto;
+
+  padding-bottom: 5px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+nav .right .dropdown-content a { /* Links inside the dropdown */
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 5px;
+}
+
+nav .right .dropdown-content a:nth-child(1) {
+   color: var(--text-color);
+   background-color: var(--background-color);
+   padding: 12px 16px;
+} 
+
+nav .right .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+nav .right .dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown menu on hover */
+}
 
 /* SECTION 1: Hero */
 .hero-section {
@@ -161,16 +221,16 @@ nav .right a span {
 
 
 
-/* SECTION 3: Testimony */
+/* SECTION 3: Construction */
 
 .testimony-section {
    padding: 0 50px;
-   margin-bottom: 100px;
+   margin-bottom: 10px;
    }
 
 .testimony-section h2 {
    font-size: 35px;
-   margin-bottom: 30px;
+   margin-bottom: 50px;
 }
 
 .testimony-section .group {
@@ -181,18 +241,16 @@ nav .right a span {
 
 .testimony-section .group .person-details {
    text-align: center;
-   flex: 2;
+   flex: 5;
 }
 
 .testimony-section .group .text{
-      flex: 8;
+      flex: 5;
 }
 
 .testimony-section .group .person-details img {
-   width: 200px;
-   aspect-ratio: 1/1;
+   width: 800px;
    object-fit: cover;
-   border-radius: 50%;
    margin-bottom: 10px;
 }
 
@@ -262,7 +320,20 @@ nav .right a span {
 
 
 
+@media (max-width: 1300px) {
 
+   /*SECTION 3: Testimony*/
+      .testimony-section {
+      text-align: center;
+   }
+
+   .testimony-section .group {
+      flex-direction: column;
+   }
+   .testimony-section .group .person-details img {
+      width: 600px;
+   }
+}
 
 @media (max-width: 850px) {
    /*SECTION 1: hero */
@@ -283,14 +354,11 @@ nav .right a span {
 
 
    /*SECTION 3: Testimony */
-   .testimony-section {
-      text-align: center;
-   }
-
-   .testimony-section .group {
-      flex-direction: column;
-   }
-
+   .testimony-section .group .person-details img {
+   width: 450px;
+   object-fit: scale-down;
+   margin-bottom: 0px;
+}
 
    /*SECTION 4: Contact */
    .contact-section .group {
